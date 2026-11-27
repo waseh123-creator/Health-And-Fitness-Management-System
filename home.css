@@ -1,0 +1,340 @@
+
+      
+  
+     
+
+       
+     
+     /*.navbar {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2cb45d; 
+    padding: 15px 30px;
+      
+    }
+    .navbar .slogan{
+      color: #ebedee;
+      text-decoration: wavy;
+    font-style: italic;
+    }
+    .navbar h2{
+      color: white;
+      text-decoration-color: #09580c;
+    }
+   
+    
+    
+    .buttons button {
+      background-color: #2e2d2d;
+      color: white;
+      margin-left: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    size: 3cm;
+    }
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+     background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+    }
+
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .container h1 {
+      color: black;
+      font-size: 40px;
+      margin-bottom: 40px;
+      margin-top: -20px;
+    }
+
+    .container .p1 {
+      color: #09580c;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .container .p2 {
+      color: #09580c;
+      font-size: 20px;
+      margin-bottom: 40px;
+      font-style: italic;
+    
+    }
+    .container .p3 {
+      color: #09580c;
+      font-size: 20px;
+      margin-bottom: 40px;
+       font-style: bold;
+    }
+
+    .container .calculator-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .container .calculator-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    /*footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+      */
+      /* Basic Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2cb45d;
+    padding: 10px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+}
+
+.navbar .slogan h2 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    color: #f0f0f0;
+}
+.home-signin-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:white;
+    color: green;
+    text-decoration: none; /* underline hatane ke liye */
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.home-signin-btn:hover {
+    background-color:rgb(193, 201, 193); /* Mouse le jaane par thoda dark color */
+}
+
+
+/* Main Container */
+.container {
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
+.container h1 {
+    font-size: 42px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.p2 {
+    font-size: 18px;
+    color: #09580c;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* Services Grid (2x2 Layout) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 350px); /* 2 Columns of fixed width */
+    gap: 25px;
+    justify-content: center; /* Center the grid */
+    padding-bottom: 100px; /* Space for footer */
+}
+
+.service-box {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); /* Modern blur effect */
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.service-box h3 {
+    color: #2cb45d;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.service-box p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Get Service Button */
+.services-grid button {
+    grid-column: span 2; /* Takes full width of the grid */
+    justify-self: center;
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #2cb45d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.services-grid button:hover {
+    background-color: #1a4d2e;
+    letter-spacing: 1px;
+}
+
+/* Responsive Layouts */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .navbar .slogan h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .p2 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* still 2 columns but flexible */
+        padding: 0 20px 80px 20px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .navbar .slogan h2 {
+        margin-top: 5px;
+    }
+
+    .buttons,
+    .home-signin-btn {
+        margin-top: 10px;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    .container {
+        padding: 30px 15px 15px 15px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .p2 {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: minmax(0, 1fr); /* single column */
+        padding: 0 15px 60px 15px;
+    }
+
+    .services-grid button {
+        grid-column: auto; /* full width in single column layout */
+        width: 100%;
+    }
+}
+/* Add to existing home.css */
+.services-grid button {
+    grid-column: span 2;
+    justify-self: center;
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #2cb45d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.services-grid button:hover {
+    background-color: #1a4d2e;
+    letter-spacing: 1px;
+}
+
+/* Add a simple BMI calculator on home page if desired */
+.home-calculator {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; /* Changed from fixed if content is long */
+    width: 100%;
+}

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card {
+  background: white;
+  padding: 25px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+/* 1. Global Styles (Sabhi devices ke liye) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Ye items ko line todne ki ijazat deta hai */
+}
+
+/* 2. Media Query for Tablets (768px se niche) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Mobile par sidebar chupa do */
+  }
+  
+  .main-content {
+    width: 100%; /* Full width kar do */
+  }
+}
+
+/* 3. Media Query for Mobile (480px se niche) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Heading thodi choti kar do */
+  }
+}
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

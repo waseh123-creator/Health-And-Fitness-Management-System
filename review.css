@@ -1,0 +1,108 @@
+/* Base setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+}
+
+/* Section */
+.review-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* Heading */
+.review-section h1 {
+  text-align: center;
+  color: #0a7cff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+/* Timeline container */
+.review-container {
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Vertical timeline line */
+.review-container::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0a7cff, transparent);
+}
+
+/* Each review */
+.review-card {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 25px;
+  transition: transform 0.3s;
+}
+
+/* Dot for each review */
+.review-card::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: #0a7cff;
+  border-radius: 50%;
+}
+
+/* Hover effect */
+.review-card:hover {
+  transform: translateX(8px);
+}
+
+/* User name */
+.review-card h3 {
+  margin: 0;
+  color: #0a7cff;
+  font-size: 17px;
+}
+
+/* Stars */
+.stars {
+  display: inline-block;
+  color: #ffc107;
+  font-size: 18px;
+  margin: 4px 0 8px;
+  vertical-align: middle;
+}
+
+/* Review text */
+.review-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0 0;
+  max-width: 750px;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .review-container {
+    padding-left: 20px;
+  }
+
+  .review-container::before {
+    left: 6px;
+  }
+}
+

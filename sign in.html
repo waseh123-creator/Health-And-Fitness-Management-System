@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomainNow Sign In</title>
+    <link rel="stylesheet" href="sign in.css">
+    
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="logo">BMI,<span class="logo-bold">Health and Fitness Tracking</span></div>
+        <h1>Sign in</h1>
+
+        <div class="notice-box">
+            By clicking "Sign In" below, you agree to BMI website! 
+            
+        </div>
+
+        <p class="create-link">Don't have an account? <a href="#">Create an Account</a></p>
+
+        <form>
+            <div class="input-field">
+                <input type="text" placeholder="Email" required>
+            </div>
+
+            <div class="input-field">
+                <input type="password" placeholder="Password " required>
+                
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="stay-signed">
+                <label for="stay-signed">Keep me signed in on this device</label>
+            </div>
+
+            <button type="submit" class="btn-signin">Sign In</button>
+        </form>
+
+       
+    </div>
+</div>
+
+<script>
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Page reload rokna
+    
+    // Simple check
+    const username = document.querySelector('input[type="text"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+    
+    if(username && password) {
+        // Login mark karo
+        localStorage.setItem('userLoggedIn', 'true');
+        localStorage.setItem('username', username);
+        
+        // Planner page pe bhejo
+        window.location.href = 'planner.html';
+    } else {
+        alert('Please enter username and password');
+    }
+});
+
+// Password show/hide (agar aapke code me hai)
+function togglePassword() {
+    const pass = document.querySelector('input[type="password"]');
+    if(pass.type === 'password') {
+        pass.type = 'text';
+    } else {
+        pass.type = 'password';
+    }
+}
+
+</script>
+
+
+</body>
+</html>
